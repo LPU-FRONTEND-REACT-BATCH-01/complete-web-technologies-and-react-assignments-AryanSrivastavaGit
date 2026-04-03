@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Here</title>
+</head>
+<body>
+    <form action="">
+
+        <table>
+            <tr>
+                <td><h1>Pizza Order Here</h1></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><h4>First Name: </h4></td>
+                <td>
+                    <label for="firstName"></label> <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><h4>Last Name:</h4></td>
+                <td>
+                    <label for="lastName"></label> <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><h4>Email:</h4></td>
+                <td>
+                    <label for="email"></label> <input type="email" id="email" name="email" required placeholder="abc@example.com">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><h4>Contact:</h4></td>
+                <td>
+                    <label for="contact"></label> <input type="number" id="contact" name="contact" required placeholder="Ex-8976538764" minlength="10" maxlength="10">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><h4>Preferred Delivery Date:</h4></td>
+                <td>
+                    <label for="deliveryDate"></label> <input type="date" id="deliveryDate" name="deliveryDate" required>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><h4>Size:</h4></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="size">Small</label> <input type="radio" id="size" name="size" value="small">
+                    <label for="size">Medium</label> <input type="radio" id="size" name="size" value="medium">
+                    <label for="size">Large</label> <input type="radio" id="size" name="size" value="large">
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td><h4><i><mark>Outlet:</mark></i></h4></td>
+                <td>
+                    <select name="outletChoice" id="outletChoice">
+                        <option value="">Select Outlet</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><h3>Menu</h3></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./assets/p1.jfif" alt="" width="70px" height="70px">
+                </td>
+                <td><input type="checkbox" name="pizza"><h4>Hawaiian(150.00$ <strike>170.00$)</strike></h4></td>
+                <td>
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <input type="submit"> <input type="reset">
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
