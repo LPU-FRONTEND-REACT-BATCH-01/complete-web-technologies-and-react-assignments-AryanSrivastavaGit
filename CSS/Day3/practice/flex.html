@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            width: 100vw;
+            height: 20vh;
+            background-color: #eb5555;
+
+            display: flex;
+            /* by default flext-direction is row, main-axis(x-axis) controlled by justify-content, cross-axis(y-axis) controlled by align-items */
+            /* flex-direction: row; */
+
+            /* if we use flex direction as column role of axis will change */
+            /* flex-direction: column;
+            justify-content: end;
+            align-items: end; */
+
+            justify-content: space-around;
+            gap: 5px;
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+
+        /* .item1{
+            flex-shrink: 0;
+        } */
+        .item1 {
+            flex-shrink: 1;
+        }
+        .item2 {
+            flex-shrink: 2;
+        }
+
+        /* .item3{
+            flex-grow: 0;
+        } */
+        .item3 {
+            flex-grow: 1;
+        }
+        .item4 {
+            flex-grow: 2;
+        }
+
+        /* .item5{
+            flex-basis: 0;
+        } */
+        .item5 {
+            flex-basis: 100px;
+        }
+
+        .item6{
+            align-self: flex-end;
+        }
+
+        .item7{
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="item1 item">item 1</div>
+        <div class="item2 item">item 2</div>
+        <div class="item3 item">item 3</div>
+        <div class="item4 item">item 4</div>
+        <div class="item5 item">item 5</div>
+        <div class="item6 item">item 6</div>
+        <div class="item7 item">item 7</div>
+    </div>
+</body>
+
+</html>
