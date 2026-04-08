@@ -18,7 +18,8 @@ nav {
 /* Logo */
 
 .logo-area {
-    width: 8%;
+    /* width: 8%; */
+    flex: 0 0 115px;
     display: flex;
 }
 
@@ -47,7 +48,8 @@ nav {
 /* search bar */
 
 .searchBar-area {
-    width: 55%;
+    /* width: 55%; */
+    flex: 1 1 auto;
     display: flex;
     align-items: center;
 }
@@ -102,7 +104,8 @@ nav {
 /* menu area */
 
 .menu {
-    width: 25%;
+    /* width: 25%; */
+    flex: 0 0 400px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -113,10 +116,12 @@ nav {
 /* icon area */
 
 .icons {
-    width: 12%;
+    /* width: 12%; */
+    flex: 0 0 180px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-right: 25px;
 }
 
 .theme,
@@ -125,3 +130,28 @@ nav {
     background: white;
 }
 
+
+
+/* media-query */
+
+@media (max-width:1024px) {
+    .menu{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .searchBar{
+        display: none;
+    }
+    .searchBar-area{
+        justify-content: end;
+        color: white;
+    }
+}
+
+@media (min-width:767px) {
+    .search-icon{
+        display: none;
+    }
+}
