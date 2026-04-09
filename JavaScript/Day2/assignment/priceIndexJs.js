@@ -15,3 +15,4 @@ let calculate = function(price){
 }
 
 console.log(totalAmount(price, calculate));
+
