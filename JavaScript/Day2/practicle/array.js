@@ -22,7 +22,7 @@ console.log("----------------------------------------------")
 
 greet.reduce((pre, cur, index, arr) => {
     console.log(`${pre} | ${cur} | ${index} | ${arr}`)
-}, "A");
+},"A");
 console.log("----------------------------------------------")
 
 
