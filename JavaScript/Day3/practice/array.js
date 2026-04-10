@@ -11,3 +11,9 @@ let arrStr = ["aryan", "abishek", "abhijeet", "aayushi"]
 // console.log(arr)
 // arr.sort((a,b)=>b-a);
 // console.log(arr)
+
+
+
+//some
+let tf = arrStr.some(x => x==="aryan");
+console.log(tf);
