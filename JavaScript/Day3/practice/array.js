@@ -15,5 +15,5 @@ let arrStr = ["aryan", "abishek", "abhijeet", "aayushi"]
 
 
 //some
-let tf = arrStr.some(x => x==="aryan");
+let tf = arrStr.some(x => x==="aryan"); //stops as soon as it finds first match and return true else false
 console.log(tf);
