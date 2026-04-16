@@ -25,13 +25,23 @@ let employees: Employee[] = [
 ]
 console.log(employees[0]);
 
+type slip = {
+    move:()=>void
+}
+type hit = {
+    cross:()=>void
+}
+type technique = slip & hit;
+let basic : technique = {
+    move() {
+        
+    },
+    cross() {
+        
+    }
+}
 
-interface UserDetails {
-    id: number,
-    name: string
-}
-let users: UserDetails = {
-    id: 1,
-    name: "aryan"
-}
-console.log(users);
+// literals type
+type quantity = 50 | 100;
+let rice:quantity = 50;
+type metric = 'cm' | 'inch'
