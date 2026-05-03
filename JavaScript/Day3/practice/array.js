@@ -1,12 +1,12 @@
 let arrStr = ["aryan", "abishek", "abhijeet", "aayushi"]
-// let arr = [1,23,45,6,3,2,556,4]
+let arr = [1,23,45,6,3,2,556,4]
 
-// arrStr.sort();
-// console.log(arrStr)
+arrStr.sort();
+console.log(arrStr)
 
 //  for numbers
-// arr.sort();
-// console.log(arr)
+arr.sort();
+console.log(arr)
 // arr.sort((a,b)=>a-b);
 // console.log(arr)
 // arr.sort((a,b)=>b-a);

@@ -1,4 +1,4 @@
-import { pName, pPrice } from "./export.js";
+import { pName, pPrice, updateName } from "./export.js";
 
 // pName = "watch";
 console.log(pName);

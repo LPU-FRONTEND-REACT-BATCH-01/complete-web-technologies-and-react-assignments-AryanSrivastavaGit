@@ -13,7 +13,7 @@ let users = {
         state:"Bihar"
     }
 }
-// let {id, userLocation, username} = users;  // variable name should be same as object key, and ordering doesn't matter.
-// console.log(id, username, userLocation);
-let {id, userLocation:{city, state}, username} = users; // deep destructuring
-console.log(id, username, city, state);
+let {id, userLocation, username} = users;  // variable name should be same as object key, and ordering doesn't matter.
+console.log(id, username, userLocation);
+// let {id, userLocation:{city, state}, username} = users; // deep destructuring
+// console.log(id, username, city, state);

@@ -626,73 +626,73 @@
 
 
 
-// function addSpices() {
-//     return new Promise((resolve, reject) => {
-//         let addedSpices = true
-//         setTimeout(() => {
-//             if (addedSpices) {
-//                 console.log("Spices Added")
-//                 resolve()
-//             }
-//             else {
-//                 reject("Rejected the first")
-//             }
-//         }, 1000)
-//     })
-// }
+function addSpices() {
+    return new Promise((resolve, reject) => {
+        let addedSpices = true
+        setTimeout(() => {
+            if (addedSpices) {
+                console.log("Spices Added")
+                resolve()
+            }
+            else {
+                reject("Rejected the first")
+            }
+        }, 1000)
+    })
+}
 
 
-// function pourOil() {
+function pourOil() {
 
-//     return new Promise((resolve, reject) => {
-//         let pouredOil = true
-//         setTimeout(() => {
-//             if (pouredOil) {
-//                 console.log("Poured Oil")
-//                 resolve()
-//             }
-//         }, 3000)
-//     })
-// }
+    return new Promise((resolve, reject) => {
+        let pouredOil = true
+        setTimeout(() => {
+            if (pouredOil) {
+                console.log("Poured Oil")
+                resolve()
+            }
+        }, 3000)
+    })
+}
 
-// function fryOnions() {
+function fryOnions() {
 
-//     return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
 
-//         setTimeout(() => {
-//             let friedOnions = false
-//             if (friedOnions) {
-//                 console.log("Fried Onions")
-//                 resolve()
-//             }
-//             else {
-//                 console.log("Still onions not fried")
-//                 reject("You were unable to fry onions, you cant cook")
-//             }
-//         }, 5000)
-//     })
-// }
-
-
-// function addRice() {
-
-//     return new Promise((resolve, reject) => {
-//         let addedRice = true
-//         setTimeout(() => {
-//             if (addedRice) {
-//                 console.log("Rice Added")
-//                 resolve()
-//             }
-//         }, 4000)
-//     })
-// }
+        setTimeout(() => {
+            let friedOnions = false
+            if (friedOnions) {
+                console.log("Fried Onions")
+                resolve()
+            }
+            else {
+                console.log("Still onions not fried")
+                reject("You were unable to fry onions, you cant cook")
+            }
+        }, 5000)
+    })
+}
 
 
-// addSpices()
-// .then(()=>pourOil())
-// .then(()=>fryOnions())
-// .then(()=>addRice())
-// .catch((error)=>console.log(error))
+function addRice() {
+
+    return new Promise((resolve, reject) => {
+        let addedRice = true
+        setTimeout(() => {
+            if (addedRice) {
+                console.log("Rice Added")
+                resolve()
+            }
+        }, 4000)
+    })
+}
+
+
+addSpices()
+.then(()=>pourOil())
+.then(()=>fryOnions())
+.then(()=>addRice())
+.catch((error)=>console.log(error))
 
 // Aync and Await
 
@@ -837,35 +837,35 @@
 
 
 
-let parentContainer = document.querySelector(".parent-container")
+// let parentContainer = document.querySelector(".parent-container")
 
 
-let fetchData = async () => {
-    let res = await fetch("https://dummyjson.com/products")
-    let data = await res.json()
+// let fetchData = async () => {
+//     let res = await fetch("https://dummyjson.com/products")
+//     let data = await res.json()
 
-    let products = data.products
+//     let products = data.products
 
-    console.log(data)
-    displayData(products)
-}
+//     console.log(data)
+//     displayData(products)
+// }
 
-let displayData = (data) => {
-
-
-    data.map((product) => {
-        let container = document.createElement("ul")
-        let title = document.createElement("li")
-        let price = document.createElement("li")
-
-        title.textContent = product.title
-        price.textContent = product.price
-
-        container.append(title,price)
-
-        parentContainer.append(container)
-    })
-}
+// let displayData = (data) => {
 
 
-fetchData()
+//     data.map((product) => {
+//         let container = document.createElement("ul")
+//         let title = document.createElement("li")
+//         let price = document.createElement("li")
+
+//         title.textContent = product.title
+//         price.textContent = product.price
+
+//         container.append(title,price)
+
+//         parentContainer.append(container)
+//     })
+// }
+
+
+// fetchData()
