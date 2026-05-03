@@ -1,0 +1,19 @@
+function users(name:string | null | undefined){
+    if(name){
+        console.log(name.toUpperCase());
+    }else{
+        console.log("hola");
+    }
+}
+users(null);
+
+
+type Customer = {
+    birthday:Date
+}
+function getCustomer(id:number) : Customer | null | undefined{
+    return id===0 ? null : {birthday : new Date};
+}
+let customer = getCustomer(0);
+// Optional property access operator
+console.log(customer?.birthday);

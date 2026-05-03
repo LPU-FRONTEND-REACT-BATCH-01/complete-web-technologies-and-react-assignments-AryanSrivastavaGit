@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .parentContainer{
+            width: 700px;
+            height: 2000px;
+            background-color: #1eb3a6;
+        }
+
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #eb5555;
+        }
+
+        .item{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+
+        .item1{
+            position: static;
+        }
+        .item2{
+            position: relative;
+        }
+        .item3{
+            position: absolute;
+        }
+        .item4{
+            position: sticky;
+            /* to use position static, condition must be given or else it will be behave like static */
+            top: 50px;
+        }
+        .item5{
+            /* fixed position is only related to viewport only */
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="parentContainer">
+        <div class="container">
+            <div class="item1 item">item 1</div>
+            <div class="item2 item">item 2</div>
+            <div class="item3 item">item 3</div>
+            <div class="item4 item">item 4</div>
+            <div class="item5 item">item 5</div>
+        </div>
+    </div>
+</body>
+</html>

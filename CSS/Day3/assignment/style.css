@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100vw;
+    height: 9vh;
+    background-color: rgb(35 39 47);
+
+    display: flex;
+
+    position: sticky;
+    top: 0;
+}
+
+/* Logo */
+
+.logo-area {
+    /* width: 8%; */
+    flex: 0 0 115px;
+    display: flex;
+}
+
+.reactLogo {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.reactLogo>img {
+    width: 40px;
+}
+
+.reactVersion {
+    color: #9199a4;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 5px;
+    font-size: small;
+}
+
+
+/* search bar */
+
+.searchBar-area {
+    /* width: 55%; */
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar {
+    width: 100%;
+    height: 60%;
+    background-color: #333945;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.searchIcon {
+    margin-left: 10px;
+    color: #9199a4;
+}
+
+.searchText>p {
+    color: #9199a4;
+    font-weight: bold;
+    font-size: large;
+}
+
+.ctrl-k {
+    display: flex;
+    align-items: center;
+    color: #9199a4;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.ctrl {
+    padding: 2px 8px;
+    background-color: #232730;
+    border-radius: 5px;
+}
+
+.k {
+    padding: 2px 8px;
+    background-color: #232730;
+    border-radius: 5px;
+}
+
+
+/* menu area */
+
+.menu {
+    /* width: 25%; */
+    flex: 0 0 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* icon area */
+
+.icons {
+    /* width: 12%; */
+    flex: 0 0 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 25px;
+}
+
+.theme,
+.translation,
+.github {
+    background: white;
+}
+
+
+
+/* media-query */
+
+@media (max-width:1024px) {
+    .menu{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .searchBar{
+        display: none;
+    }
+    .searchBar-area{
+        justify-content: end;
+        color: white;
+    }
+}
+
+@media (min-width:767px) {
+    .search-icon{
+        display: none;
+    }
+}

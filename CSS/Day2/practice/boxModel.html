@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        /* always metion on top */
+        *{
+            margin: 0;
+            padding: 0;
+
+            /* by default */
+            /* box-sizing: content-box; */
+
+            /* should use */
+            box-sizing: border-box;
+        }
+
+
+        div:nth-of-type(1) {
+            padding: 10px;
+            border: 10px solid black;
+            margin: 10px;
+        }
+
+        
+        /* <!-- for padding, margin - 1 value - all sides
+                              2 value top-bottom left-right
+                              3 value top left-right bottom
+                              4 value top right bottom left --> */
+        div:nth-of-type(2) {
+            padding: 10px;
+            border: 10px solid black;
+            margin: 10px;
+            
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+        
+        
+        div:nth-of-type(3){
+            padding: 10px;
+            border: 10px solid black;
+            margin: 10px;
+
+            /* for border-radius - 1 value - all side
+                                2 value - topLeft-bottomRight topRight-bottomLeft
+                                3 value - topLeft topRight-bottomLeft bottomRight
+                                4 value - topLeft topRight bottomRight bottomLeft */
+
+            border-radius: 20px;            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>Box Model</div>
+
+    <div>Padding</div>
+
+    <div>border-radius</div>
+</body>
+
+</html>

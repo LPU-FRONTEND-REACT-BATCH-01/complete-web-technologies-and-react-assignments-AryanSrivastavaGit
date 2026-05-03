@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 25vh;
+            width: 35vw;
+            text-align: center;
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 2px;
+            line-height: 30px;
+            padding: 20px;
+        }
+        
+        div:hover p:nth-of-type(1)::first-letter{
+            font-size: 50px;
+            color: purple;
+        }
+
+        p:nth-of-type(2){
+            font-weight: bold;
+            text-decoration-line: underline;
+        }
+        
+        div:hover{
+            box-shadow: 3px 3px 10px rgb(198, 188, 188);
+            font-size: 20px;
+        }
+
+        /* when i hover on div p of nth type 2 should change */
+        div:hover p:nth-of-type(2){
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            The only way to do great work is to love what you do.
+        </p>
+        <p>- Steve Jobs</p>
+    </div>
+</body>
+
+</html>

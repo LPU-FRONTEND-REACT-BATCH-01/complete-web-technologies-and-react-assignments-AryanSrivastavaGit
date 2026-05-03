@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a:link{
+            color: chartreuse;
+        }
+
+        a:hover{
+            color: chocolate;
+        }
+
+        a:active{
+            color: aqua;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        input:focus{
+            border: 5px solid red;
+        }
+
+        h1::before{
+            content: "This is ";
+        }
+
+        h2::after{
+            content: " This is";
+        }
+
+        h3:hover::after{
+            content: " to add content ";
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://amazon.in">amazon</a>
+
+    <a href="https://google.com">google</a>
+
+    <input type="text">
+
+    <h1>::before</h1>
+
+    <h2>::after</h1>
+
+    <h3>::before::afterUse</h3>
+</body>
+</html>
